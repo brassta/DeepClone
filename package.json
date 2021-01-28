@@ -1,6 +1,6 @@
 {
   "name": "deep-clone",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "JavaScript deep clone utility",
   "main": "index.js",
   "scripts": {
