@@ -13,9 +13,14 @@ npm i deep-clone-agenzzia
 ## Usage
 
 ```javascript
-import DeepCopy from 'deep-clone-agenzzia'
+import DeepClone from 'deep-clone-agenzzia'
 
-DeepCopy(yourObj)
+// somewhere in code
+const copiedObj = DeepCLone(yourOriginalObj)
+
+console.log(copiedObj)
+console.log(yourOriginalObj)
+console.log(copiedObj === yourOriginalObj) // should be false, objects aren't on the same address
 ```
 
 ## Contributing

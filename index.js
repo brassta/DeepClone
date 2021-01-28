@@ -41,7 +41,7 @@ function doCopy(obj) {
     return copy;
   }
 
-  throw new Error('Unable to copy obj! Its type isn\'t supported.');
+  throw new Error('Unable to copy obj! Unsuported type.');
 }
 
 function DeepClone(obj) {
