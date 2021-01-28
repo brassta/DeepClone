@@ -1,5 +1,5 @@
 import assert from 'assert';
-import deepCopy from '../index.js'
+import DeepCopy from '../index.js'
 import { dataProvider } from '../test-data/data-provider.js'
 
 describe('Array', function() {
@@ -12,7 +12,7 @@ describe('Array', function() {
 
 describe("deep clone utility", () => {
   const data = dataProvider();
-  const result = deepCopy(data);
+  const result = DeepCopy(data);
 
   it('should return some data', () => {
     result.exist
@@ -25,7 +25,7 @@ describe("deep clone utility", () => {
   })
   it('should I call it asynchrnously', () => {
     async function asyncFun() {
-      const localResult = await deepCopy(data);
+      const localResult = await DeepCopy(data);
       return localResult
     }
     asyncFun().then((result) => {

@@ -7,7 +7,7 @@ Deep Clone is an ES6 JavaScript helper library used to provide the exact copy of
 Use the NPM.
 
 ```bash
-npm install foobar
+npm i deep-clone-agenzzia
 ```
 
 ## Usage

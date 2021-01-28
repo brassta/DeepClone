@@ -6,8 +6,6 @@
  */
 "use strict";
 
-import { dataProvider } from './test-data/data-provider.js'
-
 function doCopy(obj) {
   let copy;
 
@@ -27,7 +25,7 @@ function doCopy(obj) {
   if(obj instanceof Array){
     copy = [];
     for(let i = 0, len = obj.length; i < len; i++) {
-      copy[i] = deepCopy(obj[i]);
+      copy[i] = DeepCopy(obj[i]);
     }
     return copy;
   }
@@ -37,7 +35,7 @@ function doCopy(obj) {
     copy = {};
     for(const attr in obj) {
       if(obj.hasOwnProperty(attr)){
-        copy[attr] = deepCopy(obj[attr]);
+        copy[attr] = DeepCopy(obj[attr]);
       }
     }
     return copy;
@@ -46,7 +44,7 @@ function doCopy(obj) {
   throw new Error('Unable to copy obj! Its type isn\'t supported.');
 }
 
-function deepCopy(obj) {
+function DeepCopy(obj) {
 
   try {
     return doCopy(obj)
@@ -56,5 +54,5 @@ function deepCopy(obj) {
 
 }
 
-export default deepCopy
+export default DeepCopy
 
