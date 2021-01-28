@@ -1,0 +1,33 @@
+{
+  "name": "deep-clone",
+  "version": "0.0.1",
+  "description": "JavaScript deep clone utility",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "deep",
+    "clone",
+    "deep",
+    "clone"
+  ],
+  "author": {
+    "name": "Branko Stevanovic",
+    "email": "branko@agenzzia.com",
+    "url": "https://agenzzia.com"
+  },
+  "type": "module",
+  "exports": "./index.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
+}
