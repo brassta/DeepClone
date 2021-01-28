@@ -25,7 +25,7 @@ function doCopy(obj) {
   if(obj instanceof Array){
     copy = [];
     for(let i = 0, len = obj.length; i < len; i++) {
-      copy[i] = DeepCopy(obj[i]);
+      copy[i] = DeepClone(obj[i]);
     }
     return copy;
   }
@@ -35,7 +35,7 @@ function doCopy(obj) {
     copy = {};
     for(const attr in obj) {
       if(obj.hasOwnProperty(attr)){
-        copy[attr] = DeepCopy(obj[attr]);
+        copy[attr] = DeepClone(obj[attr]);
       }
     }
     return copy;
@@ -44,7 +44,7 @@ function doCopy(obj) {
   throw new Error('Unable to copy obj! Its type isn\'t supported.');
 }
 
-function DeepCopy(obj) {
+function DeepClone(obj) {
 
   try {
     return doCopy(obj)
@@ -54,5 +54,5 @@ function DeepCopy(obj) {
 
 }
 
-export default DeepCopy
+export default DeepClone
 

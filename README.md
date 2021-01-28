@@ -13,7 +13,9 @@ npm i deep-clone-agenzzia
 ## Usage
 
 ```javascript
-import foobar from 'nesto'
+import DeepCopy from 'deep-clone-agenzzia'
+
+DeepCopy(yourObj)
 ```
 
 ## Contributing
